@@ -381,20 +381,23 @@ html,body{
 
 .sub-section .sub-section-text{
   display: inline;
-  justify-items: center;
-  align-items: center;
   text-align: center;
 }
 
 .sub-section .sub-section-text h6{
   color: rgba(255, 0, 0, 0.750);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .sub-section .sub-section-text h2{
-  font-size: 30px;
+  font-size: 35px;
   margin-top: -30px;
+}
+
+.sub-section .sub-section-text p{
+  font-size: 12px;
+  margin-top: -20px;
 }
 
 }
