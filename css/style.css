@@ -1,0 +1,106 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* To All */
+
+html,body{
+    margin: 0px !important;
+    padding: 0px !important;
+    background-color: rgb(192, 192, 192);
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden !important;
+    cursor: default;
+    transition: 2s;
+  }
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* To All Ending */
+
+@media screen and (max-width: 767px) {
+
+.Main-Section{
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 1px;
+}
+
+/* Head Section */
+
+.header{
+    background-color: rgb(58, 58, 255);
+    height: 60px;
+    width: 100%;
+}
+
+/* Cover Image */
+.cover-img > img{
+    height: 85px;
+    width: 100%;
+}
+
+/* Profile Image */
+
+.profile-pic{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic h4{
+    color: gray;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+
+.profile-pic > img{
+    height: 60px;
+    width: 70px;
+    padding: 5px 5px;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: -38px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Profile Info Section */
+
+.profile-info{
+    margin-left: 15px;
+    line-height: 2px;
+}
+
+.profile-info h1{
+    font-weight: 400;
+}
+
+.profile-info h5{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-info h4{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .profile-info h5{
+        color: gray;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .profile-info h4{
+        font-weight: 400;
+        font-size: 13px;
+    }
+}
