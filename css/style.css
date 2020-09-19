@@ -188,7 +188,7 @@ html,body{
 
 .connection .group-icon > img {
     height: 40%;
-    width: 50%;
+    width: 45%;
     padding-top: 18px;
     padding-left: 15px;
 }
@@ -209,7 +209,7 @@ html,body{
     display: flex;
     justify-content: space-around;
     padding: 0 2px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .nav_menu .nav_list .nav_link{
