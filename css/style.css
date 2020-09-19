@@ -1,177 +1,67 @@
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* To All */
+    <!-- External Css Linked -->
+    <link rel="stylesheet" href="./css/style.css">
 
-html,body{
-    margin: 0px !important;
-    padding: 0px !important;
-    background-color: rgb(192, 192, 192);
-    scroll-behavior: smooth;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden !important;
-    cursor: default;
-    transition: 2s;
-  }
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-*{
-    text-decoration: none;
-    list-style: none;
-}
+    <title>YaarMe</title>
+</head>
+<body>
+  <!-- Head Section -->
+  <div class="header">
+    <div class="back-btn"><i class='bx bx-arrow-back'></i></div>
+    <form class="searchform group">
+      <label for="search-box">
+        <h2><span class='bx bx-search'></span></h2>
+      </label>
+      <input type="search" id="search-box" placeholder="YaarMe">
+    </form>
 
-/*===== Colores =====*/
-:root{
-    --Blue-color: #0077B5;
-  }
+    <div class="dots"><i class='bx bx-dots-vertical-rounded'></i></div>
+  </div>
+  <!-- Head Section Ending -->
 
-/* To All Ending */
+  <section class="Main-Section">
+    
+    <!-- Cover And Profile Image -->
+    <div class="cover-img">
+    <img src="https://coverfiles.alphacoders.com/372/37275.jpg" alt="">
+    </div>
 
-@media screen and (max-width: 767px) {
+    <div class="profile-pic">
+        <img src="https://raw.githubusercontent.com/mack-1999/YaarMe/master/Img/Yaarme-logo.png" alt="">
+        <h4><i class='bx bx-check'></i>Following</h4>
+    </div>
+    <!-- Cover And Profile Image -->
 
-.Main-Section{
-    background-color: rgb(250, 250, 250);
-    padding-bottom: 1px;
-    margin-top: 1px;
-}
+    <!-- Profile-Info -->
 
-/* Head Section */
-.back-btn{
-    padding-top: 15px;
-    padding-left: 15px;
-    font-size: 25px;
-    color: white;
-}
+    <div class="profile-info">
+        <h1>YaarMe</h1>
+        <h5>Information Services | Raipur, Chhattisgarh <br> 100 followers</h5>
+        <h4>Building the world's most luxurious social media.</h4>
+    </div>
 
-.searchform {
-    display: block;
-    margin: 0;
-    padding-top: 20px;
-    overflow: hidden;
-    width: 60%;
-  }
+    <!-- Profile Info Ending -->
 
-  label, input {
-    vertical-align: baseline;
-    color: white;
-  }
+    <!-- Visit Website Button -->
 
-  label {
-    margin-top: -23px;
-    float: left;
-  }
+    <div class="visit-button">
+        <button type="button" class="visit-btn" onclick="window.open('https://yaarme.com/login/')">VISIT WEBSITE <i class='bx bx-link-external'></i></button>
+    </div>
 
-  ::-webkit-input-placeholder{
-      color: #fff;
-  }
+    <!-- Visit Website Button Ending -->
 
-  input[type="search"] {
-    border: 2px solid #fff;
-    border-width: 0 0 2px;
-    background-color: transparent;
-    font: 15px "Open Sans", sans-serif;
-    padding: 0.125em 0.225em;
-    width: 85%;
-    float: left;
-  }
+  </section>
   
-  input[type="search"]:focus {
-    color: #ffffff;
-    border-color: #ffffff;
-    outline: none;
-  }
+</body>
+     
+    <script src="./Javascript/main.js"></script>
 
-.dots{
-    padding-top: 13px;
-    padding-right: 15px;
-    font-size: 30px;
-    color: white;
-}
-
-.header{
-    background-color: var(--Blue-color);
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-/* Cover Image */
-.cover-img > img{
-    height: 85px;
-    width: 100%;
-}
-
-/* Profile Image */
-
-.profile-pic{
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-pic h4{
-    color: gray;
-    margin-right: 15px;
-    font-weight: 500;
-}
-
-
-.profile-pic > img{
-    height: 55px;
-    width: 55px;
-    padding: 5px 5px;
-    border-radius: 2%;
-    background-color: rgb(255, 255, 255);
-    margin-left: 15px;
-    margin-top: -38px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Profile Info Section */
-
-.profile-info{
-    margin-left: 15px;
-    margin-top: -20px;
-}
-
-.profile-info h1{
-    font-weight: 400;
-}
-
-.profile-info h5{
-    color: gray;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: -16px;
-}
-
-.profile-info h4{
-    font-weight: 400;
-    font-size: 14px;
-    margin-top: -16px;
-}
-
-/* Visit Website Button */
-
-.visit-button{
-    text-align: center;
-    margin-top: -11px;
-    margin-bottom: 5px;
-    padding: 0 15px;
-}
-
-.visit-btn{
-    border: 2px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: .15rem;
-    width: 100%;
-    background: var(--Blue-color);
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-}
+</html>
