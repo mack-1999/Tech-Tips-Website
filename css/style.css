@@ -209,7 +209,7 @@ html,body{
     display: flex;
     justify-content: space-around;
     padding: 0 2px;
-    margin-bottom: .8rem;
+    margin-bottom: 1.2rem;
 }
 
 .nav_menu .nav_list .nav_link{
