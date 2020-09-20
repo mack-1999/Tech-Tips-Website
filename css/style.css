@@ -329,6 +329,7 @@ html,body{
 }
 
 .pro-info{
+    padding-top: 8px;
     margin-right: 240px;
     line-height: 1px;
 }
