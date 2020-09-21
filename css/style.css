@@ -27,12 +27,62 @@ html,body{
 /* To All Ending */
 
 @media screen and (min-width: 768px){
-    html,body{
+
+    .only-desktop{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: flex;
+    }
+
+    .only-desktop .des-info{
+        transform: translate(20%,40%);
+    }
+    
+    .only-desktop .des-info h1{
+        font-size: 30px;
+        max-width: 50%;
+        line-height: 35px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .only-desktop .des-info p{
+        font-size: 15px;
+        max-width: 50%;
+        line-height: 20px;
+        font-weight: 500;
+        color: #808080;
+        letter-spacing: 1px;
+    }
+
+    .only-desktop .des-img{
+        height: 50%;
+        width: 50%;
+        transform: translate(-20%,10%);
+    }
+
+    .header{
+        display: none;
+    }
+
+    .Main-Section{
+        display: none;
+    }
+
+    .sub-section{
+        display: none;
+    }
+
+    .post_card{
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
+
+    .only-desktop{
+        display: none;
+    }
 
 
 /* Head Section */
@@ -45,6 +95,7 @@ html,body{
     justify-content: space-between;
     position: fixed;
     border: none;
+    z-index: 11111;
 }
 
 .back-btn{
@@ -331,14 +382,14 @@ html,body{
 
 .head .pro-pic > img{
     height: 70%;
-    width: 85%;
+    width: 70%;
     padding-left: 15px;
     padding-top: 15px;
 }
 
 .pro-info{
     padding-top: 8px;
-    margin-right: 220px;
+    margin-right: 200px;
     line-height: 1px;
 }
 
@@ -448,18 +499,22 @@ hr.line{
 }
 
 .group .like .lik{
+    color: #808080;
     margin-left: 5px;
 }
 
 .group .comment .com{
+    color: #808080;
     margin-left: 25px;
 }
 
 .group .share .sha{
+    color: #808080;
     margin-left: 12px;
 }
 
 .group .send .sen{
+    color: #808080;
     margin-left: 10px;
 }
 
