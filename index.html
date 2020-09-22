@@ -177,17 +177,18 @@
     <!-- Menu -->
     <div class="nav_menu">
       <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link active">HOME</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">ABOUT</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">JOBS</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">PEOPLE</a></li>
+          <li class="nav_item"><a href="#" data-filter="Home" class="nav_link active">HOME</a></li>
+          <li class="nav_item"><a href="#" data-filter="About" class="nav_link">ABOUT</a></li>
+          <li class="nav_item"><a href="#" data-filter="Jobs" class="nav_link">JOBS</a></li>
+          <li class="nav_item"><a href="#" data-filter="People" class="nav_link">PEOPLE</a></li>
       </ul>
     </div>
 
   </section>
 
-  <!-- Sub-Section -->
-  <section class="sub-section">
+  <div class="data-sections">
+    <!-- Home-Section -->
+    <section class="filter Home-section Home">
     <div class="post">
       <h1>Posts</h1>
       <div class="post_menu">
@@ -199,9 +200,8 @@
         </ul>
       </div>
     </div>
-  </section>
-  
-  <!-- Post_Section -->
+
+    <!-- Post_Section -->
   <section class="post_card">
     <div class="head">
       <div class="pro-pic"><img src="https://raw.githubusercontent.com/mack-1999/YaarMe/master/Img/Yaarme-logo.png" alt=""></div>
@@ -252,10 +252,67 @@
     </div>
   </section>
 
+    </section>
+  
+    <!-- About-Section -->
+    <section class="filter about-section About">
+      <div class="heading">
+        <h1>Overview</h1>
+        <p>Connecting you to the people and community you love.</p>
+      </div>
+
+      <div class="other-details">
+        <table>
+          <tr>
+            <td>Website</td>
+            <td style="color: #0077B5;">&nbsp;http://yaarme.com</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td style="color: #0077B5;">&nbsp;9169538457</td>
+          </tr>
+          <tr>
+            <td>Industry</td>
+            <td>&nbsp;Information</td>
+          </tr>
+          <tr>
+            <td>Company Size</td>
+            <td>&nbsp;11-50 employees</td>
+          </tr>
+          <tr>
+            <td>Headquarters</td>
+            <td>&nbsp;Raipur,Chhattisgarh</td>
+          </tr>
+          <tr>
+            <td>Founded</td>
+            <td>&nbsp;2020</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
 
 
 </body>
      
     <script src="./Javascript/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+      $(Document).ready(function(){
+        $(".nav_link").click(function(){
+          var name = $(this).attr("data-filter");
+          if(name == "Home"){
+            $(".filter").not("."+name).hide("2000");
+            $(".filter").filter("."+name).show("2000");
+          }
+          else{
+            $(".filter").not("."+name).hide("2000");
+            $(".filter").filter("."+name).show("2000");
+          }
+        });
+      });
+    </script>
 
 </html>
