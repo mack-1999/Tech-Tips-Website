@@ -69,11 +69,7 @@ html,body{
         display: none;
     }
 
-    .Home-section{
-        display: none;
-    }
-
-    .post_card{
+    .data-sections{
         display: none;
     }
 }
@@ -555,7 +551,7 @@ tr{
     color: white;
 }
 
-/* Post-Card Section */
+/* Card Section */
 
 .post_card{
     background-color: rgb(250, 250, 250);
