@@ -314,6 +314,10 @@ html,body{
     
 }
 
+.Home-section{
+    margin-bottom: 20px;
+}
+
 .post{
     background-color: rgb(250, 250, 250);
     margin-top: -5px;
@@ -369,30 +373,33 @@ html,body{
 /* About Section */
 
 .about-section{
-    background-color: rgb(250, 250, 250);
-    margin-top: 8px;
+    margin-top: -5px;
     margin-left: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 100%;
     padding-bottom: 10px;
+}
+
+.about-area{
+    background-color: rgb(250, 250, 250);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
-.about-section .heading{
+.about-section .about-area .heading{
     padding: 0 15px;
 }
 
-.about-section .heading h1{
+.about-section .about-area .heading h1{
     font-size: 18px;
     font-weight: 500;
     padding-top: 5px;
 }
 
-.about-section p{
+.about-section .about-area p{
     color: #808080;
 }
 
-.other-details{
+.about-area .other-details{
     padding: 0 15px;
 }
 
@@ -405,6 +412,141 @@ table{
 tr{
     height: 40px;
 }
+
+.Location{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+    margin-top: -5px;
+}
+
+.Location h1{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.Location .prim{
+    padding: 2px 10px;
+    width: 70px;
+    height: 28px;
+    background-color: #ececec;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Location .headquaters{
+    line-height: 1px;
+}
+
+.Location p{
+    font-size: 18;
+    line-height: 5px;
+}
+
+.Location h2{
+    line-height: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #0077B5;
+}
+
+
+/* Job Section */
+
+.Job-section{
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.create-job{
+    display: flex;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    padding-left: 15px;
+}
+
+.create-job h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bell-icon{
+    font-size: 25px;  
+}
+
+.add-icon{
+    padding-left: 18px;
+    font-size: 35px;
+    color: #0077B5;
+}
+
+.job-post{
+    margin-top: 8px;
+    background-color: rgb(250, 250, 250);
+    /* box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.job-post .suticase{
+    padding-top: 25px;
+    height: 25%;
+    width: 25%;
+}
+
+.job-post h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.job-post p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 15px;
+    color: #808080;
+}
+
+/* People Section */
+
+.People-section{
+    margin-top: -10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.people-heading{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.people-heading h1{
+    padding: 15px 15px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.employees{
+    margin-top: -10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px;
+}
+
+.employees h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.employees p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -15px;
+}
+
 
 /*Active menu*/
 .active2::after{
