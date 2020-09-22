@@ -308,10 +308,17 @@ html,body{
 
 /* Sub-Section Start */
 
-.sub-section{
+
+.data-sections{
+    display: flex;
+    
+}
+
+.post{
     background-color: rgb(250, 250, 250);
     margin-top: -5px;
     padding-bottom: 1px;
+    padding-right: 15px;
 }
 
 .post h1{
@@ -357,6 +364,46 @@ html,body{
 .post_list .post_item .active2{
     background-color: #8a8a8a;
     color: white;
+}
+
+/* About Section */
+
+.about-section{
+    background-color: rgb(250, 250, 250);
+    margin-top: 8px;
+    margin-left: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.about-section .heading{
+    padding: 0 15px;
+}
+
+.about-section .heading h1{
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+.about-section p{
+    color: #808080;
+}
+
+.other-details{
+    padding: 0 15px;
+}
+
+table{
+    width: 100%;
+    font-size: 17px;
+    color: #808080;
+}
+
+tr{
+    height: 40px;
 }
 
 /*Active menu*/
